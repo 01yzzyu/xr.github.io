@@ -75,7 +75,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>ReChar</title>
+  <title>XR</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -252,7 +252,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">ReChar: Revitalising Characters with Structure-Preserved and User-Specified Aesthetic Enhancements</h1>
+            <h1 class="title is-1 publication-title">XR: Cross-Modal Agents for Composed Image Retrieval</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <div class="authors" style="text-align:center; font-size:1.2em; line-height:1.8em;">
@@ -269,7 +269,7 @@
           
 
               <div class="has-text-centered is-size-5" style="margin-top:0.5em;">
-                <strong>WWWW 2026</strong>
+                <strong>WWW 2026</strong>
               </div>
             
              <div class="is-size-5 publication-authors">
@@ -375,22 +375,41 @@ Through progressive multi-agent coordination, $\text{X}^\text{R}$ iteratively re
   </div>
   
 <!-- Image carousel -->
+<div style="margin: 2%;"></div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <img stype="margin:20px" src="static/images/queen_framework_00.png" alt="MY ALT TEXT"/>
+        <div style="margin: 2%;"></div>
+        <h2 class="subtitle has-text-justified"><span style="font-weight: bolder;">Our Script Framework.</span> a three-stage pruning framework: 
+          (a) overall architecture; (b) Query-Conditioned Semantic Pruning (QCSP); 
+          (c) Graph-Structured Pruning (GSP). Together, these modules remove semantically irrelevant and visually redundant tokens through a joint selection process.
+        </h2>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/case_stduy_00.png" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/case_stduy1_00.png" alt="Second research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-      </h2>
+         Case study on CIRR. $\text{X}^\text{R}$ correctly grounds complex scene edits (e.g., bus orientation, reflective jackets) through factual verification. The target image is marked with the green box.
+        </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/paca_image_00.png" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/case_stduy_00.png" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-        Qualitative comparisons with existing methods and ablated models. Visual comparisons between ReChar and existing methods are conducted under identical characters, prompts, and styles. We reuse the reference images in ablation studies to highlight the robustness of ReChar.
+          Case study on FashionIQ. $\text{X}^\text{R}$ captures subtle attribute edits (e.g., tone, lettering) and validates them via text-based questioning. The target image is marked with the green box.
         </h2>
       </div>
   </div>

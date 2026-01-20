@@ -1,0 +1,82 @@
+# Task: CIR Unified Schema
+
+You are provided with:
+- Reference Image Description: [[REF_IMAGE_DESC]]
+- Query Instruction: [[INSTRUCTION]]
+
+You are provided with two inputs:
+1. Reference Image: The base image.
+2. Query Instruction: A natural language request that describes the expected target image.
+   - The query may express explicit modifications (e.g., "change the shirt color to red").
+   - It may specify constraints (e.g., "must be outdoors").
+   - It may add new conditions (e.g., "add a dog").
+   - Or it may describe a general search intent (e.g., "similar but in a beach setting").
+
+Your task is to transform these inputs into a structured description of the expected target image.
+This requires both understanding the reference image and reasoning about the query.
+
+### Step 1: Describe the Reference Image
+- List all visible objects in the reference image.
+- For each object, include key attributes (e.g., color, size, state, position, relationships).
+
+### Step 2: Interpret the Query Instruction
+- Break the query down step by step.
+- Identify which parts imply additions, deletions, modifications, or constraints.
+- Where attributes are mentioned, bind them explicitly to objects (e.g., "shirt → color: blue → red").
+
+### Step 3: Apply the Query Instruction
+- Update or filter the reference image description accordingly.
+- Ensure consistency: if a modification removes an attribute, exclude it from the target set.
+- If the query adds constraints without direct edits (e.g., "must be at night"), incorporate them.
+
+### Step 4: Produce the Target Image Detail Set
+Organize results into two categories:
+
+Existent Objects
+- List all objects and attributes that must appear in the target image.
+- Be explicit about attribute values required by the query.
+
+Nonexistent Objects
+- List all objects/attributes that must NOT appear in the target image.
+- Include items explicitly removed, replaced, or invalid under the query.
+
+Return ONLY a valid JSON object (no markdown fences, no extra text) with this exact schema:
+
+{
+  "reference_image_description": [
+    {
+      "object": "string",
+      "attributes": ["string", "..."],
+      "relationships": ["string", "..."]
+    }
+  ],
+  "query_understanding": {
+    "step_by_step": ["string", "..."],
+    "additions": [
+      {"object": "string", "attributes": ["string", "..."]}
+    ],
+    "deletions": [
+      {"object": "string", "attributes": ["string", "..."]}
+    ],
+    "modifications": [
+      {
+        "target_object": "string",
+        "attribute": "string",
+        "from": "string",
+        "to": "string"
+      }
+    ],
+    "constraints": ["string", "..."]
+  },
+  "applied_instruction": ["string", "..."],
+  "target_image": {
+    "existent": [
+      {"object": "string", "attributes": ["string", "..."]}
+    ],
+    "nonexistent": [
+      {"object": "string", "attributes": ["string", "..."]}
+    ]
+  }
+}
+
+IMPORTANT: Output only the JSON object. Do not add explanations or markdown code fences.

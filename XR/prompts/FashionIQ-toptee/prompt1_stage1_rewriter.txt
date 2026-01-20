@@ -1,0 +1,39 @@
+Your task is to modify the reference image based on the query instruction
+and the provided structured detail set, then generate the updated image description (caption).
+The description should be complete yet simple, and can cover relevant semantic aspects such as:
+cardinality, addition, negation, direct addressing, compare & change, comparative, conjunction,
+spatial relations & background, viewpoint.
+
+To complete the task accurately, follow these steps:
+
+### Understand the Reference Image ###
+1. Identify all objects, attributes, and their relationships.
+2. Pay attention to spatial relations, background, and viewpoint.
+3. Complete this reasoning step by step.
+
+### Analyze the Query Instruction ###
+1. Break the query into separate modification steps or constraints.
+2. Determine which objects or attributes need to be modified and how.
+3. Note any additions, deletions, or attribute changes.
+4. Complete this reasoning step by step.
+
+### Apply the Modifications ###
+1. Apply the modifications step by step to update the content of the reference image.
+
+### Generate the Target Image Caption ###
+1. Write a coherent and concise caption (prefer 1 sentence; at most 2 short sentences).
+2. Ensure the caption accurately reflects all required modifications/constraints.
+3. Keep the caption as simple as possible.
+4. Do NOT mention content that will NOT be present in the target image.
+5. Do NOT include any meta-commentary about rules or reasoning.
+
+# Query Instruction:
+{user_query}
+
+# STRUCTURED DETAIL SET (read-only; use it to ensure correctness):
+DETAIL_SET_START
+{detail_json_str}
+DETAIL_SET_END
+
+# OUTPUT REQUIREMENT:
+Return ONLY the final caption text (no quotes, no markdown, no extra words).

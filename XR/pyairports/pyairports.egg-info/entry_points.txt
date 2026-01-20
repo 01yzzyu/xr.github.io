@@ -1,0 +1,2 @@
+[console_scripts]
+pyairports = pyairports.airports:main

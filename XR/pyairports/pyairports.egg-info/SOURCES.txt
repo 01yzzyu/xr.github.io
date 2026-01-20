@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+VERSION
+setup.py
+pyairports/__init__.py
+pyairports/airports.py
+pyairports.egg-info/PKG-INFO
+pyairports.egg-info/SOURCES.txt
+pyairports.egg-info/dependency_links.txt
+pyairports.egg-info/entry_points.txt
+pyairports.egg-info/top_level.txt
+pyairports/data/airport_list.json
+pyairports/data/other_list.json
+tests/test_pyairports.py

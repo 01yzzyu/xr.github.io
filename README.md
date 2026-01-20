@@ -14,13 +14,6 @@
   <p><sup>★</sup>Corresponding author · zy4028@hw.ac.uk · w.pang@hw.ac.uk · y.yuan@hw.ac.uk</p>
 </div>
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-text-to-image-retrieval-on-1)](https://paperswithcode.com/sota/zero-shot-text-to-image-retrieval-on-1?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-text-to-image-retrieval-on-ms-coco-1)](https://paperswithcode.com/sota/zero-shot-text-to-image-retrieval-on-ms-coco-1?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/chat-based-image-retrieval-on-visdial)](https://paperswithcode.com/sota/chat-based-image-retrieval-on-visdial?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-composed-image-retrieval-zs-cir-on-2)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-2?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-composed-image-retrieval-zs-cir-on)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-composed-image-retrieval-zs-cir-on-1)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-1?p=xr-unifying-language-guided-image-1)
-
 ---
 
 ## ✨ Highlights

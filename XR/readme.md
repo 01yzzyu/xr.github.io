@@ -6,20 +6,13 @@
 </div>
 
 <div align="center">
-  <img src="figures/teaser_00.png" alt="XR teaser" width="820">
+  <img src="./figures/teaser_00.png" alt="XR teaser" width="820">
 </div>
 
 <div align="center">
   <p>Authors: Zhongyu Yang, Wei Pang, Yingfang Yuan<sup>★</sup> (BCML, Heriot-Watt University)</p>
   <p><sup>★</sup>Corresponding author · zy4028@hw.ac.uk · w.pang@hw.ac.uk · y.yuan@hw.ac.uk</p>
 </div>
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-text-to-image-retrieval-on-1)](https://paperswithcode.com/sota/zero-shot-text-to-image-retrieval-on-1?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-text-to-image-retrieval-on-ms-coco-1)](https://paperswithcode.com/sota/zero-shot-text-to-image-retrieval-on-ms-coco-1?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/chat-based-image-retrieval-on-visdial)](https://paperswithcode.com/sota/chat-based-image-retrieval-on-visdial?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-composed-image-retrieval-zs-cir-on-2)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-2?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-composed-image-retrieval-zs-cir-on)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on?p=xr-unifying-language-guided-image-1)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/xr-unifying-language-guided-image-1/zero-shot-composed-image-retrieval-zs-cir-on-1)](https://paperswithcode.com/sota/zero-shot-composed-image-retrieval-zs-cir-on-1?p=xr-unifying-language-guided-image-1)
 
 ---
 
@@ -31,7 +24,7 @@
 - 📈 Up to ~38% gain over strong training-based/free baselines on FashionIQ, CIRR, CIRCO (per paper).
 
 <div align="center">
-  <img src="figures/framework_00.png" alt="XR framework" width="880">
+  <img src="./figures/framework_00.png" alt="XR framework" width="880">
 </div>
 
 XR reframes composed image retrieval as progressive reasoning: 🧪 imagination agents create target proxies from cross-modal pairs, 🔍 similarity agents fuse visual/text cues with RRF for coarse filtering, and ✅ question agents verify candidates via predicate-style checks before final re-ranking.
@@ -77,9 +70,6 @@ data
 - CIRCO: captions/{val.json,test.json}, unlabeled2017/*.jpg  
 - CIRR: captions/, captions_ext/, image_splits/, dev/, test1/ (add `--subset` for subset runs)  
 - FashionIQ: images/, image_splits/split.{dress,shirt,toptee}.val.json, captions/cap.{dress,shirt,toptee}.val.json  
-- MSCOCO: images/, test_5k_mscoco_2014.csv  
-- Flickr30K: images/, test_1k_flickr.csv  
-- VisDial: Search_Space_val_50k.json, VisDial_v1.0_queries_val.json  
 
 ## ▶️ Run Inference
 Example (FashionIQ-dress, valid split):
@@ -107,21 +97,18 @@ Notes:
   - FashionIQ/Flickr30K/MSCOCO/VisDial → `output.log`.
   - CIRCO/CIRR → submit `{timestamp}_{dataset}_test_stage3_eval.json` to official servers.
 
-<div align="center">
-  <img src="docs/exp_result_cir.png" alt="CIR results" width="820">
-  <img src="docs/exp_result_tir.png" alt="TIR results" width="820">
-</div>
+
 
 ## 🧪 Ablations & Cases
 <div align="center">
-  <img src="figures/parameter_00.png" alt="Parameter study" width="430">
-  <img src="figures/lambda_00.png" alt="Lambda study" width="430">
+  <img src="./figures/parameter_00.png" alt="Parameter study" width="430">
+  <img src="./figures/lambda_00.png" alt="Lambda study" width="430">
 </div>
 
 <div align="center">
-  <img src="figures/case_stduy_00.png" alt="Case study overview" width="820">
-  <img src="figures/case_stduy1_00.png" alt="Case study 1" width="410">
-  <img src="figures/case_stduy2_00.png" alt="Case study 2" width="410">
+  <img src="./figures/case_stduy_00.png" alt="Case study overview" width="820">
+  <img src="./figures/case_stduy1_00.png" alt="Case study 1" width="410">
+  <img src="./figures/case_stduy2_00.png" alt="Case study 2" width="410">
 </div>
 
 ## ♻️ Repro Tips

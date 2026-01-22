@@ -1,9 +1,9 @@
-
 <div align="center">
   <h1>🚀 XR: Cross-Modal Agents for Composed Image Retrieval</h1>
   <h3>Training-free multi-agent pipeline for edit-sensitive retrieval</h3>
-  <p>WWW 2026 · <a href="https://doi.org/10.1145/3774904.3792276">DOI</a> · <a href="https://arxiv.org/abs/2503.10166">arXiv:2503.10166</a></p>
+  <p>WWW 2026 · <a href="https://arxiv.org/pdf/2601.14245">DOI</a> · <a href="https://arxiv.org/pdf/2601.14245">ArXiv</a></p>
 </div>
+
 
 <div align="center">
   <img src="./figures/teaser_00.png" alt="XR teaser" width="820">

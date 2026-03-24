@@ -119,5 +119,10 @@ Notes:
 ## 📚 Citation
 If you find our paper and code useful, please cite:
 ```bibtex
-% coming soon
+@article{yang2026xr,
+  title={XR: Cross-Modal Agents for Composed Image Retrieval},
+  author={Yang, Zhongyu and Pang, Wei and Yuan, Yingfang},
+  journal={arXiv preprint arXiv:2601.14245},
+  year={2026}
+}
 ```
